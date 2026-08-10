@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html body{
+    width: 100vw;
+    min-height: 100dvh;
+    box-sizing: border-box;
+}
+
+header{
+   background-color: #D69D00;
+   border: 1px solid black;
+}
+header > h2,h1{
+    text-align: center;
+    padding: 10px;
+}
+li{
+    border: 1px solid black;
+    display: inline-block;
+    font-size: 1.7em;
+    background-color: #0073D6;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
