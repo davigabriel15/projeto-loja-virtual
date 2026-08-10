@@ -33,10 +33,11 @@ a{
     text-decoration: none;
     color: white;
 }
-#produto{
+.produto{
+    box-shadow: 3px 3px 5px black;
     display: block;
     border: 1px solid;
-    max-width: 300px;
+    max-width: 500px;
     margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
@@ -44,4 +45,11 @@ a{
 p{
     padding: 10px;
     text-align: justify;
+    border: 1px solid black;
+}
+img{
+    display: block;
+    max-width: 500px;
+    height: 300px;
+    margin: auto;
 }
