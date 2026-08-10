@@ -33,3 +33,15 @@ a{
     text-decoration: none;
     color: white;
 }
+#produto{
+    display: block;
+    border: 1px solid;
+    max-width: 300px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+p{
+    padding: 10px;
+    text-align: justify;
+}
