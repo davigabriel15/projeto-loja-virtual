@@ -5,15 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes Sociais</title>
     <style>
-        a{
-            display: block;
+        *{
+            font-family: Helvetica, sans-serif;
+        }
+        h1{
+            padding: 10px;
+        }
+        a{  
+            display: inline-block;
+            font-size: 2em;
+            text-decoration: none;
+            padding-bottom: 0px;
+            color: white;
+        }
+        img{
+            display: inline;
+            width: 200px;
+            border-radius: 200px;
+            margin: 10px;
+        }
+        section{
+            border: 1px solid black;
+            margin: 10px;
+        }
+        #instagram{
+            background-image: linear-gradient(to right, blue, purple, rgb(255, 97, 123));
+            a{
+            position: absolute;
+            top: 220px;
+            left: 250px;
+            }
+        }
+        #github{
+            background-image: linear-gradient(to right, black, green);
+            a{
+            position: absolute;
+            top: 450px;
+            left: 250px;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="" alt="Logo do Instagram">
-    <a href="https://www.instagram.com/davi_gabriel_lima/">Perfil Do instagram</a>
-    <a href="https://github.com/davigabriel15">Perfil do Git Hub</a>
+    <h1>Olá! Essas São as Redes Sociais do Criador da Pagina!</h1>
+    <section id="instagram">
+        <img src="imagens/logo-instagram.jpg" alt="Logo do Instagram">
+        <a href="https://www.instagram.com/davi_gabriel_lima/" target="_blank">Clique aqui para acessar <br> o Perfil Do instagram</a>
+    </section>
+    <section id="github">
+        <img src="imagens/logo-github.jpg" alt="">
+        <a href="https://github.com/davigabriel15" target="_blank">Clique aqui para acessar <br> o Perfil do Git Hub</a>
+    </section>
     
 </body>
 </html>
