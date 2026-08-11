@@ -5,6 +5,14 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 html body{
     width: 100vw;
     min-height: 100dvh;
@@ -17,6 +25,9 @@ header{
 }
 
 header > h2,h1{
+    font-family: "Bangers", system-ui;
+    letter-spacing: 3px;
+    color: black;
     text-align: center;
     padding: 10px;
 }
