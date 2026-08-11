@@ -5,57 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes Sociais</title>
     <style>
-        *{
+        * {
             font-family: Helvetica, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        h1{
+
+        body {
             padding: 10px;
         }
-        a{  
-            display: inline-block;
-            font-size: 2em;
-            text-decoration: none;
-            padding-bottom: 0px;
-            color: white;
+
+        h1 {
+            padding: 10px 0;
+            font-size: 1.5em;
+            text-align: center;
         }
-        img{
-            display: inline;
-            width: 200px;
-            border-radius: 200px;
-            margin: 10px;
+
+        #tp {
+            display: none;
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 15px;
         }
-        section{
+
+        section {
             border: 1px solid black;
-            margin: 10px;
+            border-radius: 12px;
+            margin: 15px 0;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
-        #instagram{
-            background-image: linear-gradient(to right, blue, purple, rgb(255, 97, 123));
-            a{
-            position: absolute;
-            top: 220px;
-            left: 250px;
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        a {  
+            font-size: 1.2em;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #instagram {
+            background-image: linear-gradient(to right, #405de6, #833ab4, #fd1d1d);
+        }
+
+        #github {
+            background-image: linear-gradient(to right, #111, #44b63a);
+        }
+
+        /* MEDIA QUERY: Para telas até 360px de largura e até 800px de altura */
+        @media screen and (max-width: 360px) and (max-height: 800px) {
+            h1 {
+                font-size: 1.2em;
             }
-        }
-        #github{
-            background-image: linear-gradient(to right, black, green);
-            a{
-            position: absolute;
-            top: 450px;
-            left: 250px;
+
+            #tp {
+                display: block; /* Exibe a mensagem de instrução para toque */
+            }
+
+            section {
+                flex-direction: column; /* Empilha foto e texto */
+                text-align: center;
+                padding: 20px 10px;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            a {
+                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
-    <h1>Olá! Essas São as Redes Sociais do Criador da Pagina!</h1>
+    <h1>Olá! Essas São as Redes Sociais do Criador da Página!</h1>
+    <h1 id="tp">Clique nas fotos ou nos links para acessar</h1>
+
     <section id="instagram">
-        <img src="imagens/logo-instagram.jpg" alt="Logo do Instagram">
-        <a href="https://www.instagram.com/davi_gabriel_lima/" target="_blank">Clique aqui para acessar <br> o Perfil Do instagram</a>
+        <a href="https://www.instagram.com/davi_gabriel_lima/" target="_blank">
+            <img src="imagens/logo-instagram.jpg" alt="Logo do Instagram">
+        </a>
+        <a href="https://www.instagram.com/davi_gabriel_lima/" target="_blank">
+            Clique aqui para acessar <br> o Perfil do Instagram
+        </a>
     </section>
+
     <section id="github">
-        <img src="imagens/logo-github.jpg" alt="">
-        <a href="https://github.com/davigabriel15" target="_blank">Clique aqui para acessar <br> o Perfil do Git Hub</a>
+        <a href="https://github.com/davigabriel15" target="_blank">
+            <img src="imagens/logo-github.jpg" alt="Logo do GitHub">
+        </a>
+        <a href="https://github.com/davigabriel15" target="_blank">
+            Clique aqui para acessar <br> o Perfil do GitHub
+        </a>
     </section>
-    
 </body>
 </html>
